@@ -25,7 +25,7 @@
   - Host: `localhost`
   - Port: `1521`
   - Use Service Name: coché
-  - Service name: `FREEPDB1`
+  - Database: `FREEPDB1`
   - Username: `admin`
   - Password: `admin`
 - “Test Connection” → “Finish”.
