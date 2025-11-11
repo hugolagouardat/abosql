@@ -28,7 +28,6 @@
   - Database: `FREEPDB1`
   - Username: `admin`
   - Password: `admin`
-- Télécharger le driver si nécessaire
 - “Test Connection” 
 - Télécharger le driver si nécessaire
 - “Finish”
