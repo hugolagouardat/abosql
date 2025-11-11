@@ -1,9 +1,10 @@
 services:
   oracle-free:
     image: ghcr.io/gvenzl/oracle-free:slim-faststart
-    name: dboracle
+    container_name: dboracle
     ports:
       - "1521:1521"
+    environment:
       - ORACLE_PASSWORD=mdpass
       - APP_USER=admin
       - APP_USER_PASSWORD=admin
