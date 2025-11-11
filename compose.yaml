@@ -1,0 +1,21 @@
+services:
+  oracle-free:
+    image: ghcr.io/gvenzl/oracle-free:slim-faststart
+    name: dboracle
+    ports:
+      - "1521:1521"
+      - ORACLE_PASSWORD=mdpass
+      - APP_USER=admin
+      - APP_USER_PASSWORD=admin
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./oracle-init:/container-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "/opt/oracle/healthcheck.sh"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+volumes:
+  oracle_data:
