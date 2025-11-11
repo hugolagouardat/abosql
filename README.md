@@ -1,4 +1,4 @@
-# Utilisation (Docker/Podman — mêmes gestes, exemples avec Docker)
+# Utilisation (Docker/Podman)
 
 - Démarrer (premier lancement et suivants)
   - `docker compose up -d`
