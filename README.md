@@ -28,5 +28,8 @@
   - Database: `FREEPDB1`
   - Username: `admin`
   - Password: `admin`
-- “Test Connection” → “Finish”.
+- Télécharger le driver si nécessaire
+- “Test Connection” 
+- Télécharger le driver si nécessaire
+- “Finish”
 - Référence JDBC: `jdbc:oracle:thin:@localhost:1521/FREEPDB1`
