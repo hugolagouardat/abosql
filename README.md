@@ -1,4 +1,19 @@
-# Utilisation (Docker/Podman)
+# ABOSQL (OracleFree)
+
+## Commandes rapides(Docker/Podman)
+
+### Conteneur Oracle jetable linux/mac(sans volume)
+```bash
+docker run --rm -p 1521:1521 -e ORACLE_PASSWORD=mdpass -e APP_USER=admin -e APP_USER_PASSWORD=admin -v $(pwd)/oracle-init:/container-entrypoint-initdb.d:ro ghcr.io/gvenzl/oracle-free:slim-faststart
+```
+
+### Conteneur Oracle jetable Windows(sans volume)
+```bash
+docker run --rm -p 1521:1521 -e ORACLE_PASSWORD=mdpass -e APP_USER=admin -e APP_USER_PASSWORD=admin -v ${pwd}/oracle-init:/container-entrypoint-initdb.d:ro ghcr.io/gvenzl/oracle-free:slim-faststart
+```
+
+
+## Utilisation (Docker/Podman)
 
 - Démarrer (premier lancement et suivants)
   - `docker compose up -d`
@@ -19,7 +34,7 @@
     - `docker compose up -d`
 
 
-# Connexion (recommandé: DBeaver)
+## Connexion (recommandé: DBeaver)
 
 - Paramètres DBeaver (Oracle):
   - Host: `localhost`
